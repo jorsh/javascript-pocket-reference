@@ -119,10 +119,16 @@ for
 - A function is generally a named section of code that can be “called” by name, and the code inside it will be run each time.
 - Functions can optionally take arguments (aka parameters)—values you pass in. And they can also optionally return a value back.
 
-- Scope
-- Closure
-- Hoisting
-- Prototype
+## Scope
+- Scope consists of a series of "bubbles" that each act as a container or bucket, in which identifiers (variables, functions) are declared. These bubbles nest neatly inside each other, and this nesting is defined at author-time.
+- The lexing phase of compilation is essentially able to know where and how all identifiers are declared, and thus predict how they will be looked-up during execution.
+- Two mechanisms in JavaScript can "cheat" lexical scope: eval(..) and with. 
+
+- The **Principle of Least Privilege** states that in the design of software, such as the API for a module/object, you should expose only what is minimally necessary, and "hide" everything else.
+
+## Closure
+## Hoisting
+## Prototype
 
 ___
 ### Notes
